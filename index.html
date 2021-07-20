@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML-practice</title>
+  <style>
+  .heading1{
+    color: blueviolet;
+    size: 0in;
+    padding: auto;
+  }
+  .htmllist{
+    color: blue;
+
+  }
+  .htmltable{
+    color: red;
+  }
+  .border{
+    color:powderblue;
+    padding: auto;
+  }
+  </style>
+    
+
   </head>
 
   <body>
-    <h1>This is my first heading</h1>
+    <h1 class="heading1">This is my first heading</h1>
     <h2>this is my second heading</h2>
 
     <p>
@@ -22,6 +42,90 @@
     >
       index
     </a>
+    //image
     <img src="https://unsplash.com/photos/muOHbrFGEQY" alt="g" />
-  </body>
+    <!--HTML List-->
+
+    <H1 class="htmllist">HTML LIST</H1>
+    <ol type="(a)">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ol>
+
+    <ul style="list-style-type: decimal-leading-zero">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+    <!--HTML Table-->
+    <h1 class="htmltable">HTML Table</h1>
+    <table class="border" border ="8">
+      <thead>
+        <tr>
+          <th>Name</th>
+
+          <th>Roll</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Muhammd Khalid</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td>Saifullah</td>
+          <td>02</td>
+       </tr>
+      </tbody>
+    </table>
+
+    <!--HTML form-->
+    <h1>HTML Form</h1>
+    <form action="">
+      <label for="username">*User Name: </label>
+      <input type="text" id="username" placeholder="user name" required/>
+      <br><br>
+      <label for="Password">*Password: </label>
+      <input type="password" id="Password" placeholder="password" required/>
+    
+      <br><br>
+      <label for="Email">*Email: </label>
+      <input type="email" id="Email" placeholder="email" required/>
+      
+      <br><br>
+      <p>select your gender</p> 
+      <label for="Male">Male</label>
+      <input type="radio" name ="gender" id ="Male" value="Male"><br>  
+      <label for="Female">Female</label>
+      <input type="radio" name ="gender" id ="Female" value="Female"><br>     
+        <label for="Other">Other</label>
+      <input type="radio" name ="gender" id ="Other" value="Other"><br>
+            <br><br>
+      <input type="submit" value="Sign in">
+
+      <p>Please commint below</p>
+      <textarea name="commint" id="" cols="30" rows="10" placeholder="insert text here"></textarea><br>
+      <input type="button" value="submit"><br>
+      pick color: <input type="color" name="" id=""><br>
+      pick date: <input type="date" name="" id=""><br>
+      <input type="file" name="" id="">
+
+ <!--sign up form-->
+<h1>Sign up form</h1>
+<input type="Name" placeholder="First Name"><br><br>
+<input type="Name" placeholder="Last Name"><br><br>
+<input type="email" placeholder="Email"><br><br>
+<input type="password" placeholder="Password"><br><br>
+<p>Select gender</p>
+<label for="Male">Male</label>
+<input type="radio" name="gender" value="Male"><br>
+<label for="Female">Female</label>
+<input type="radio" name="gender" value="Female"><br>
+<label for="Other">Other</label>
+<input type="radio" name="gender" value="Other"><br>
+country: <input type="country" name="" id="">
+<p>write about yourself brlow</p>
+<textarea name="" id="" cols="30" rows="10" placeholder="text here"></textarea>
+</body>
 </html>
