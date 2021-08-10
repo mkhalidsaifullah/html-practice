@@ -8,3 +8,29 @@ h1{
     color: #000;
 
 }
+header{
+background-color: aquamarine;
+color: blue;
+box-sizing: border-box;
+border-color: black;
+padding: auto;
+
+}
+main{
+background-color: yellowgreen;
+color:purple;
+box-sizing: border-box;
+border-color: black;
+padding: auto;
+
+}
+
+header+h2{
+    color: black;
+}
+
+.k{
+    color: #000;
+background-color: cadetblue;
+}
+
